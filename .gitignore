@@ -63,5 +63,5 @@ $RECYCLE.BIN/
 *.lnk
 
 #etc
-*.cpp
+*.exe
 # End of https://www.toptal.com/developers/gitignore/api/c++,windows
