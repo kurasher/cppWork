@@ -19,5 +19,14 @@ int main(){
     cout << "a = " << a << ", b = " << b << endl;
     swap(a, b);
     cout << "a = " << a << ", b = " << b << endl;
+
+
+    vector<int> vec = {2, 5, 2, 1};
+    sort(vec.begin(), vec.end()); // {1, 2, 2, 5}
+    reverse(vec.begin(), vec.end()); // {5, 2, 2, 1}
+ 
+    for (int i = 0; i < vec.size(); i++) {
+        cout << vec.at(i) << endl;
+    }
 }
 
