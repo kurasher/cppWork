@@ -19,7 +19,7 @@ int main() {
 
     for(int i = 0; i < M; i++){
         match.at(A.at(i)-1).at(B.at(i)-1) = "o";
-        match.at(A.at(i)-1).at(B.at(i)-1) = "x";
+        match.at(B.at(i)-1).at(A.at(i)-1) = "x";
     }
 
 
