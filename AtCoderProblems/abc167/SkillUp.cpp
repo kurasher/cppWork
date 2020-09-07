@@ -8,14 +8,10 @@ int main(){
     vector<vector<int>> A(N, vector<int>(M));
 
     for(int i = 0; i < N; i++){
-        for(int j = 0; j < M+1; j++){
-            if(j == 0){
-                cin >> C.at(i);
-            }else{
-                cin >> A.at(i).at(j-1);
-            }
+        cin >> C.at(i);        
+        for(int j = 0; j < M; j++){
+            cin >> A.at(i).at(j);
         }
     } 
 
-    
 }
