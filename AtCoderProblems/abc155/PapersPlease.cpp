@@ -6,6 +6,7 @@ int main(){
     cin >> N;
     int num = 0;
     bool flag = false;
+    int numberFlag = 1;
 
     for(int i = 0; i < N; i++){
         cin >> num;
@@ -14,7 +15,7 @@ int main(){
                 flag = true;
             }else{
                 flag = false;
-                break;
+                numberFlag = -1;
             }
         }else{
 
@@ -22,7 +23,7 @@ int main(){
     }
 
 
-    if(flag == true){
+    if(numberFlag > 0){
         cout << "APPROVED" << endl;
     }else{
         cout << "DENIED" << endl;
