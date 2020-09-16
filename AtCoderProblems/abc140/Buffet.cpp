@@ -18,14 +18,14 @@ int main(){
         cin >> C.at(i);
     }
 
-    int satisfy_sum = 0;
+    int satisfy_sum = B.at(A.at(0)-1);
     for(int i = 1; i < N; i++){
-        int Bnum = A.at(i-1) - 1;
+        int Bnum = A.at(i) - 1;
         satisfy_sum += B.at(Bnum);
         if( i < N && A.at(i) == A.at(i-1)+1){
-            satisfy_sum += C.at(i-1);
+            satisfy_sum += C.at(A.at(i-1)-1);
         }
-        cout << satisfy_sum << endl;
+        // cout << satisfy_sum << endl;
     }
     cout << satisfy_sum << endl;
 }
